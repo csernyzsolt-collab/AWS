@@ -3,3 +3,4 @@ data
 packages_for_lambda
 .env
 .vscode
+src\notebook\hidden.ipynb
