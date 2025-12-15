@@ -4,7 +4,12 @@ Acquiring taxi usage and weather data data from public datasources, cleaning, tr
 
 Written in Python, uses the AWS cloud features, as Lambda functions, Glue, Athena, event triggers, S3 data lake.
 ![AWS modules](../../blob/master/public/AWS_side.png)
-The connection interface between the cloud elements and the local site is the AWS boto3 client.
+
+The  interface between the cloud elements and the local site is the AWS boto3 client.
+
+
+
+
 
 
 Analizing the acquired data:
@@ -24,7 +29,9 @@ GROUP BY
 ORDER BY 
   revenue_per_payment_type DESC
 
-[image]
+![Revenue per payment type](../../blob/master/public/01.png)
+
+
 
 2. List of the firt ten company ordered by revenues
 
@@ -42,17 +49,21 @@ ORDER BY
   sumfare DESC
 LIMIT 10
 
-[image]
+![List of the firt ten company ordered by revenues](../../blob/master/public/02.png)
 
-3. Taxi trips by hours
+
+
+3. Daily taxi trips by hours
 
 SELECT COUNT(*) AS trip_by_hour, EXTRACT(HOUR FROM trip_start_timestamp) AS hours
 FROM fact_taxi_trips 
 GROUP BY EXTRACT(HOUR FROM trip_start_timestamp) 
 ORDER by hours
 
+![Daily taxi trips by hours](../../blob/master/public/03.png)
 
-[image]
+
+
 
 4. Revenues per first ten area 
 
@@ -69,9 +80,11 @@ GROUP BY
 ORDER BY revenue DESC
 LIMIT 10
 
-[image]
+![Revenues per first ten area](../../blob/master/public/04.png)
 
-5. Pickup and dropoff of the O'Hare district by first ten company.
+
+
+5. Pickup and dropoff of the O'Hare district of the first ten company.
 
 SELECT 
     count(*) AS from_OHare_district_trip_number,
@@ -107,5 +120,6 @@ HAVING area_code=76
 ORDER BY to_OHare_district_trip_number DESC
 LIMIT 10
 
-[image]
+![Pickup and dropoff of the O'Hare district of the first ten company.](../../blob/master/public/05.png)
+
 
