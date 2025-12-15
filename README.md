@@ -85,7 +85,7 @@ LIMIT 10
 Note: The significant difference between the first and second area maybe the O'Hare International Airport.
 
 
-5. Pickup and dropoff of the O'Hare district of the first ten company.
+5. Pickup and dropoff of the O'Hare district by the first ten company.
 
 SELECT 
     count(*) AS from_OHare_district_trip_number,
