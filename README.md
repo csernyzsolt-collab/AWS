@@ -81,7 +81,7 @@ ORDER BY revenue DESC
 LIMIT 10
 
 ![Revenues per first ten area](../../blob/master/public/04.png)
-
+Note: The significant difference between the first and second area maybe the O'Hare International Airport.
 
 
 5. Pickup and dropoff of the O'Hare district of the first ten company.
@@ -121,5 +121,6 @@ ORDER BY to_OHare_district_trip_number DESC
 LIMIT 10
 
 ![Pickup and dropoff of the O'Hare district of the first ten company.](../../blob/master/public/05.png)
+Note: Difference between the pickup and dropoff numbers of the area, possibly due to travellers.
 
 
