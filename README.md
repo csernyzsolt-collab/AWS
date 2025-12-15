@@ -33,7 +33,7 @@ ORDER BY
 
 
 
-2. List of the firt ten company ordered by revenues
+2. List of the first ten company ordered by revenues
 
 SELECT 
   ROUND(SUM(fare),1) AS sumfare, 
@@ -65,7 +65,7 @@ ORDER by hours
 
 
 
-4. Revenues per first ten area 
+4. First ten revenues per area 
 
 SELECT 
     dim_community_areas."community name",
