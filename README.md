@@ -3,7 +3,7 @@ Data aquisition and processing project
 Acquiring taxi usage and weather data data from public datasources, cleaning, transforming for further analizing.
 
 Written in Python, uses the AWS cloud features, as Lambda functions, Glue, Athena, event triggers, S3 data lake.
-![image](../../blob/master/public/01.png)
+![](../../blob/master/public/AWS-side.png)
 The connection interface between the cloud elements and the local site is the AWS boto3 client.
 
 
