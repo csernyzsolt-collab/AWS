@@ -1,6 +1,6 @@
 Data aquisition and processing project
 
-Acquiring taxi usage and weather data data from public datasources, cleaning, transforming for further analizing.
+Acquiring taxi usage and weather data from public datasources, cleaning, transforming for further analizing.
 
 Written in Python, uses the AWS cloud features, as Lambda functions, Glue, Athena, event triggers, S3 data lake.
 ![AWS modules](../../blob/master/public/AWS_side.png)
