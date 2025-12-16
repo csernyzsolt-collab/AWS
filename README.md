@@ -123,6 +123,6 @@ LIMIT 10
 
 ![Pickup and dropoff of the O'Hare district of the first ten company.](../../blob/master/public/05.png)
 
-Note: The difference between the pickup and dropoff numbers. (Possibre reason, the travellers more often choose taxi at arrivel than deparutre, or the Airport is an immigration hub, or any reason.)
+Note: The difference between the pickup and dropoff numbers. (Possible reason, the travellers more often choose taxi at arrivel than deparutre, or the Airport is an immigration hub, or any reason.)
 
 
