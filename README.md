@@ -126,3 +126,7 @@ LIMIT 10
 Note: The difference between the pickup and dropoff numbers. (Possible reason, the travellers more often choose taxi at arrival than deparutre, or the Airport is an immigration hub, or other reason.)
 
 
+Data source: https://data.cityofchicago.org/
+Acquisition time: Between 2025-10-11 and 2025-10-14
+
+
