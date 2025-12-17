@@ -127,6 +127,6 @@ Note: The difference between the pickup and dropoff numbers. (Possible reason, t
 
 
 Data source: https://data.cityofchicago.org/
-Acquisition time: Between 2025-10-11 and 2025-10-14
+Acquisition period: Between 2025-10-11 and 2025-10-14
 
 
