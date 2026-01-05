@@ -82,7 +82,7 @@ LIMIT 10
 
 ![Revenues per first ten area](../../blob/master/public/04.png)
 
-Note: The reason of the difference between the first and second area maybe the O'Hare International Airport.
+Note: The reason of the difference between the first and second area could be the O'Hare International Airport.
 
 
 5. Pickup and dropoff of the O'Hare district by the first ten company.
