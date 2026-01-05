@@ -1,4 +1,4 @@
-Data aquisition and processing project
+Data acquisition and processing project
 
 Acquiring taxi usage and weather data from public datasources, cleaning, transforming for further analizing.
 
