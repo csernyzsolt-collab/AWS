@@ -1,18 +1,16 @@
-Data acquisition and processing project
+Data Collection and Processing Project
 
-Acquiring taxi usage and weather data from public datasources, cleaning, transforming for further analizing.
+Collection of taxi usage and weather data from public data sources, cleaning and transformation of this data for further analysis.
 
-Written in Python, uses the AWS cloud features, as Lambda functions, Glue, Athena, event triggers, S3 data lake.
+Development in Python using AWS cloud features such as Lambda functions, Glue, Athena, event triggers, and S3 Data Lake.
+
 ![AWS modules](../../blob/master/public/AWS_side.png)
 
-The  interface between the cloud elements and the local site is the AWS boto3 client.
+The interface between the cloud components and the local system is the AWS boto3 client.
 
 
 
-
-
-
-Analizing the acquired data:
+Analysis of the collected data:
 
 1. Revenue per payment type:
 
@@ -33,7 +31,7 @@ ORDER BY
 
 
 
-2. List of the first ten company ordered by revenues
+2. List of the ten highest-revenue companies
 
 SELECT 
   ROUND(SUM(fare),1) AS sumfare, 
@@ -53,7 +51,7 @@ LIMIT 10
 
 
 
-3. Daily taxi trips by hours
+3. Daily taxi rides per hour
 
 SELECT COUNT(*) AS trip_by_hour, EXTRACT(HOUR FROM trip_start_timestamp) AS hours
 FROM fact_taxi_trips 
@@ -82,10 +80,10 @@ LIMIT 10
 
 ![Revenues per first ten area](../../blob/master/public/04.png)
 
-Note: The reason of the difference between the first and second area could be the O'Hare International Airport.
+Note: The reason for the difference between the first and second areas could be O'Hare International Airport.
 
 
-5. Pickup and dropoff of the O'Hare district by the first ten company.
+5. Pick-up and drop-off service in the O'Hare district by the ten most efficient taxi companies.
 
 SELECT 
     count(*) AS from_OHare_district_trip_number,
@@ -123,10 +121,8 @@ LIMIT 10
 
 ![Pickup and dropoff of the O'Hare district of the first ten company.](../../blob/master/public/05.png)
 
-Note: The difference between the pickup and dropoff numbers. (Possible reason, the travellers more often choose taxi at arrival than deparutre, or the Airport is an immigration hub, or other reason.)
+Note: The difference between the pick-up and destination numbers. (Possible reason: Travelers more often take a taxi on arrival than on departure, or the airport is an immigration center, or there are other reasons.)
 
 
 Data source: https://data.cityofchicago.org/
-Acquisition period: Between 2025-10-11 and 2025-10-14
-
-
+Acquisition period: Between October 11, 2025 and October 14, 2025
