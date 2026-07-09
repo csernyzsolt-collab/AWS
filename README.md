@@ -121,7 +121,7 @@ LIMIT 10
 
 ![Pickup and dropoff of the O'Hare district of the first ten company.](../../blob/master/public/05.png)
 
-Note: The difference between the pick-up and destination numbers. (Possible reason: Travelers more often take a taxi on arrival than on departure, or the airport is an immigration center, or there are other reasons.)
+Note: The difference of the numbers of pickups and dropoffs. (Possible reasons: Travellers preferably get a taxi on the airport than on departure, or the airport is an immigration center, or other unknown reason.)
 
 
 Data source: https://data.cityofchicago.org/
